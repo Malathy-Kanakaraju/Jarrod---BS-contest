@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstap CDN starts here -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- scripts 1.11.3/jquery.min.js & bootstrap.min.js are included in the body-bottom section -->
+        <!-- Bootstap CDN ends here -->
+        
+        <link href="css/custom.css" rel="stylesheet">
+        
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script
+            src="http://maps.googleapis.com/maps/api/js">
+        </script>
+
+        <script>
+            var myCenter=new google.maps.LatLng(-33.998935,151.108820);
+
+            function initialize()
+            {
+            var mapProp = {
+              center:myCenter,
+              zoom:5,
+              mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker=new google.maps.Marker({
+              position:myCenter,
+              });
+
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+              content:"Castle Towers Shopping Centre,<br>25/6 -14 Castle St,<br>2153, NSW,<br>AUSTRALIA"
+              });
+
+            google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
+              infowindow.open(map,marker);
+              });
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>        
+    </head>
+    <body>
+        
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>    
+                    <div class="col-md-12">
+                    <a class="navbar-brand" href="StoreFront.html"><img src="assets/Dropbox-Logo.png" width="45" height="45" alt="Dropbox-Logo"/></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <div class="nav navbar-nav navbar-right">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle header-link" data-toggle="dropdown" >Jarrod</a>
+                            <div class="dropdown-menu">
+                                <div>
+                                    <a href="#">
+                                        <button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-off"></span> Log Out
+                                        </button> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <form class="navbar-form text-center" role="search">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid fill-padd1">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel" data-slide-to="1"></li>
+                          <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="assets/fb-icon1.png" width="300" height="300" alt="image1">
+                            </div>
+                            <div class="item">
+                                <img src="assets/fb-icon2.png" width="300" height="300" alt="image2">
+                            </div>
+                            <div class="item">
+                                <img src="assets/fb-icon1.png" width="300" height="300" alt="image3">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div> <!-- Carousel -->
+                </div>
+                <div class="col-md-5 fill-padd">
+                    <div class="row">
+                        <h1>Grand Theft Auto V - Playstation 4</h1>
+                    </div>
+                    <div class="row price-tag">
+                        Price: <strong>AU$99</strong><br>
+                        Availability: <span class="price-highlight"><strong>In Stock</strong></span><br>
+                        <div class="col-md-8 col-md-offset-2 font-buy">
+                            <strong>BUY NOW</strong>
+                        </div>
+                    </div>
+                    <div class="row fill-padd post">
+                        Postage:<br>
+                        <ul>
+                            <li>Standard:AU$5<br></li>
+                            <li>Express:AU$10</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="block-border">
+                            <h3><a href='#'><u>Jarrod's Playstation 4 Games Australia</u></a><br>
+                            <img src='assets/home-icon.png' class="botm" width="30" height="30" alt="home icon" />
+                            Castle Hill, NSW</h3>
+                        </div>
+                    </div>
+                    <div class="row text-center share">
+                        <h2>Share product on: </h2><br>
+                        <div class="flex-justify">
+                            <div><img src="assets/fb-icon2.png" width="65" height="65" alt="facebook icon" /></div>
+                            <div><img src="assets/tw-icon1.png" width="65" height="65" alt="twitter icon" /></div>
+                            <div><img src="assets/pin-icon.png" width="65" height="65" alt="pinterest icon" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+            </div>
+            <hr>
+            <div class="row">
+                <h2>Location:</h2>
+                <div class="text-center">
+                    <h3>Castle Towers Shopping Centre<br>25/6 -14 Castle St<br>2153, NSW<br>AUSTRALIA</h3>
+                </div>
+                <div id="googleMap" style="width:100%;height:500px;"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+          <div class="container-fluid">
+           <div class="row vertical-align">
+               
+            <div class="col-md-offset-2 col-md-2  text-center ">
+                <a href="#">Jarrod</a>
+            </div>
+            <div class="col-md-2  text-center">
+                <a href="#" role="button" class="btn btn-info btn-lg"><strong>Log out</strong></a>
+            </div>
+            <div class="col-md-offset-1 col-md-3 col-md-offset-2">
+                <div class="row  text-center footer1">Connect with appName</div>
+                <div class="row">
+                    <div class="col-md-6 fill-padd2">
+                        <img src="assets/fb-icon1.png" width="20" height="20" alt="facebook icon" /> Facebook
+                    </div>
+                    <div class="col-md-6 fill-padd2">
+                         <img src="assets/in-icon.png" width="20" height="20" alt="facebook icon" /> LinkedIn
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 fill-padd2">
+                        <img src="assets/tw-icon.png" width="20" height="20" alt="facebook icon" />Twitter
+                    </div>
+                    <div class="col-md-6 fill-padd2">
+                        <img src="assets/email image.png" width="20" height="20" alt="envelope"/> Email appName
+                    </div>
+                </div>
+            </div>
+           </div>
+         </div>
+        </div>        
+        
+        <!-- Bootstap CDN starts here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <!-- Bootstap CDN ends here -->
+        
+
+    </body>
+</html>

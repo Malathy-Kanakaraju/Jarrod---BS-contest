@@ -1,0 +1,147 @@
+.navbar-nav {
+    padding: 15px;
+}
+
+.dropdown-menu > li > a {
+    padding: 0px;
+}
+
+.dropdown-menu {
+    min-width: auto;
+    padding: 0px;
+}
+
+.header-link {
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:focus {
+    background-color: #000;
+}
+
+.dropdown:hover {
+    background-color: #e5e5e5;
+}
+
+.footer1 {
+    font-size: 2rem;
+}
+
+.vertical-align {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.price-tag {
+    border-radius: 20px;
+    background-color: #ebebeb;
+    font-size: 2.25rem;
+    padding: 5px 50px 15px 50px;
+    line-height: 3.5rem;
+}
+
+.price-highlight {
+    color: #00CC00;
+}
+
+.font-buy {
+    border: 1px solid #00CC00;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #00CC00;
+}
+.block-border {
+    border: 1px solid #000000;
+    line-height: 4rem;
+    padding: 5px;
+}
+
+.botm {
+    vertical-align: text-bottom;
+}
+.fill-padd {
+    padding: 0 50px;
+}
+
+.fill-padd1 {
+    padding: 0 100px;
+}
+
+.flex-justify {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+}
+
+.row > ul {
+    list-style-type: none;
+}
+
+hr {
+    border: 1px solid;
+}
+
+.post {
+    font-size: 2rem;
+}
+
+body {
+    font-family: arial,sans-serif;
+}
+
+.footer {
+    height: 100px;
+    background-color: #380000;
+    color: #ffffff;
+}
+
+.fill-padd2 {
+    padding: 5px 0px;
+}
+
+.col-md-2 > a {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    padding: 30px;
+}
+
+.flex-item {
+    border: 1px solid #C0C0C0;
+    font-size: large;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+
+.flex-item:hover {
+    border:1px solid yellow;
+}
+
+.text-indent {
+    text-indent: 20px;
+}
+
+.pagination > li > a {
+    border: none;
+}
