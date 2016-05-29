@@ -1,5 +1,9 @@
 # Jarrod---BS-contest
 
+# Preview demo here 
+# http://jarrod.esy.es/Contest%20-%20Bootstrap/public_html/Product.html
+# http://jarrod.esy.es/Contest%20-%20Bootstrap/public_html/StoreFront.html
+
 Key features of this project:
 
 (1) Bootstrap
